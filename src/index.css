@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import "tailwindcss";
+
+body {
+color: #525252;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.scroll-snap-y {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .scroll-snap-align-start {
+    scroll-snap-align: start;
+  }
+
+  /* In your src/index.css file (or another CSS file) */
+.custom-shadow-teal {
+  box-shadow: -10px 10px 0px 0px rgba(5, 242, 219, 0.7), -5px 10px 10px -5px rgba(5, 242, 219, 0.7);
+}
+
+.custom-shadow-violet {
+  box-shadow: -20px 20px 0px 0px rgba(209, 208, 242, 1), -5px 10px 10px -5px rgba(209, 208, 242, 1);
+}
+
+.custom-shadow-pistacho {
+  box-shadow: -20px 20px 0px 0px rgba(156, 217 , 171, 1), -20px 20px 0px 0px rgba(156, 217 , 171, 1);
+}
+
+.custom-shadow-purple {
+  box-shadow: 5px 10px 0px 0px rgba(107, 8 , 233, 0.7), 5px 10px 10px -5px rgba(107, 8 , 233, 0.7);
+}
+
+.custom-shadow-blue {
+  box-shadow: 20px 20px 0px 0px rgba(82, 122 , 242, 0.7), 5px 10px 10px -5px rgba(82, 122 , 242, 0.7);
+}
+
+.custom-shadow-lightviolet {
+  box-shadow: 20px 20px 0px 0px rgba(209, 208, 242, 1), -5px 10px 10px -5px rgba(209, 208, 242, 1);
+}
+
+.custom-shadow-pink {
+  box-shadow: 20px 20px 0px 0px rgba(255, 154, 141, 1), 20px 20px 0px 0px rgba(255, 154, 141, 1);
+}
+
+.video-container {
+  background-color: black; /* Color of the bezel */
+  padding: 10px; /* Adjust the thickness of the bezel */
+  border-radius: 6px; /* Optional: Match the video's border-radius */
+  display: flex; /* To center the video inside the bezel */
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  display: block; /* To prevent extra space below the video */
+  border-radius: inherit; /* Inherit the border-radius from the container */
+}
