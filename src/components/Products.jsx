@@ -1,11 +1,9 @@
 //Products.jsx
 import React from 'react'
 import Heading from './layout/Heading'
-import WebAppImg from '../assets/webappResize.png'
 import WebAppWebM from '../assets/horizontepyme.webm'
 import SignageWebM from '../assets/signage.webm'
-
-
+import { Element } from 'react-scroll'; // Import Element if not already imported
 
 const Products = () => {
     return (
@@ -14,7 +12,7 @@ const Products = () => {
                 <Heading title1='Nuestros' title2='Productos' />
             </div>
             <div className='w-full py-8'> {/* Removed z-10 and adjusted padding */}
-                <div className='min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center'> {/* First Product */}
+                <Element name="product1" className='scroll-snap-align-start min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center'> {/* First Product */}
                     <div className='w-full md:w-2/4 flex justify-center custom-shadow-pistacho rounded-md'> {/* Image Container */}
                         <div className="video-container">
                             <video
@@ -46,9 +44,9 @@ const Products = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </Element>
 
-                <div className='min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center mt-16'> {/* Second Product */}
+                <Element name="product2" className='scroll-snap-align-start min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center mt-16'> {/* Second Product */}
                     <div className='w-full md:w-2/4 flex justify-center order-2 md:order-1'> {/* Text Container - Order 1 on medium+ */}
                         <div className=' bg-opacity-80 p-8 rounded-md mt-4 md:mt-0 border-2 border-gray-300'>
                             <h2 id='subtitle2' className='bg-[#FF9A8D] text-black rounded-md inline-block p-2'>Cartelería Digital WEB</h2>
@@ -82,7 +80,7 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Element>
             </div>
         </div>
     )
